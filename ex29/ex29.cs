@@ -14,11 +14,31 @@ string GetMas(string message)
     return result;
 }
 
+//метод для печати массива
+void PrintArray(string [] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"{array[i]}");
+        if (i!=array.Length-1)
+        {
+            Console.Write(@", ");        
+        }
+        else
+        {
+            break;    
+        }
+    }
+    Console.WriteLine();
+}
 
 string massive = GetMas ("введите 8 чисел через запятую");
 massive = massive.Replace(" ", "");
 string[] array = massive.Split(',');
 
+PrintArray(array);
+
+/*
  for (int i=0; i<=array.Length-1; i++)
 { 
     Console.Write(array[i]);
@@ -32,3 +52,4 @@ string[] array = massive.Split(',');
     }
 }
 
+*/
