@@ -38,18 +38,3 @@ string[] array = massive.Split(',');
 
 PrintArray(array);
 
-/*
- for (int i=0; i<=array.Length-1; i++)
-{ 
-    Console.Write(array[i]);
-    if (i!=array.Length-1)
-    {
-        Console.Write(@", ");        
-    }
-    else
-    {
-        break;    
-    }
-}
-
-*/
