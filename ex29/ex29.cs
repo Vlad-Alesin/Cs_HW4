@@ -1,0 +1,34 @@
+﻿/* Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
+
+1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
+
+6, 1, 33 -> [6, 1, 33]
+
+все 8 элементов должны получить за один Console.ReadLine();
+подсказка: использовать потом метод string.Split(); */
+
+string GetMas(string message)
+{
+    Console.WriteLine(message);
+    string result = Console.ReadLine();
+    return result;
+}
+
+
+string massive = GetMas ("введите 8 чисел через запятую");
+massive = massive.Replace(" ", "");
+string[] array = massive.Split(',');
+
+ for (int i=0; i<=array.Length-1; i++)
+{ 
+    Console.Write(array[i]);
+    if (i!=array.Length-1)
+    {
+        Console.Write(@", ");        
+    }
+    else
+    {
+        break;    
+    }
+}
+
